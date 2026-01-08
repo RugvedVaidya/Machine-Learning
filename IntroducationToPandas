@@ -1,0 +1,20 @@
+import pandas as pd 
+
+dataset = pd.read_csv('data.csv') # if excel then read_excel if json then read_json and so on.
+
+dataset.head()        # first 5 rows
+dataset.tail()        # last 5 rows
+dataset.shape         # (rows, columns)
+dataset.columns       # column names
+dataset.info()        # data types & nulls
+dataset.describe()    # stats summary
+
+# selection 
+dataset['col1'] # single column
+dataset[['col1' , 'col2']] # multiple column
+
+dataset.loc[0] # label based
+dataset.iloc[0] # index-based
+
+#filtering
+dataset[dataset['col1'] > 24]
