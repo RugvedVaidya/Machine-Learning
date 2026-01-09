@@ -1,0 +1,41 @@
+#pip install numpy
+
+import numpy as np 
+
+#arrays
+arr = np.array([1,2,3,4])
+print(arr)
+
+matrix = np.array([[1,2],[3,4],[5,6]])
+print(matrix)
+
+#creation of arrrays
+arrZero = np.zeros(5)
+print(arrZero)
+
+arrOne = np.ones(5)
+print(arrOne)
+
+arrSeq = np.arange(0 , 10 ,2)
+print(arrSeq)
+
+#shape of array and reshaping
+print(matrix.shape)
+
+matrix.reshape(2,3)
+print(matrix)
+
+#indexing
+arr1 = np.array([10, 20, 30, 40, 50])
+
+print(arr1[0])      
+print(arr1[-1])       
+print(arr1[1:4])     
+print(arr1 > 30) # boolean indexing
+
+print(arr1.sum())
+print(arr1.mean())
+print(arr1.std())
+print(arr1.min())
+print(arr1.max())
+
