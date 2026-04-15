@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer 
 from sklearn.metrics import accuracy_score, r2_score, mean_squared_error 
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, StandardScaler, PolynomialFeatures
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, PolynomialFeatures
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline 
 from sklearn.linear_model import LinearRegression
